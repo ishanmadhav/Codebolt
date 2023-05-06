@@ -13,7 +13,7 @@ services:
                 cpus: '0.25'
                 memory: 512M
     depends_on:
-      - eureka
+      - eureka-server
     environment:
       eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
   gcc:
@@ -27,7 +27,7 @@ services:
                 cpus: '0.25'
                 memory: 512M
     depends_on:
-      - eureka
+      - eureka-server
     environment:
       eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
   
@@ -42,7 +42,7 @@ services:
                 cpus: '0.25'
                 memory: 512M
     depends_on:
-      - eureka
+      - eureka-server
     environment:
       eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
   
@@ -57,7 +57,7 @@ services:
                 cpus: '0.25'
                 memory: 512M
     depends_on:
-      - eureka
+      - eureka-server
     environment:
       eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
   
@@ -72,7 +72,7 @@ services:
                 cpus: '0.25'
                 memory: 512M
     depends_on:
-      - eureka
+      - eureka-server
     environment:
       eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
   
@@ -87,7 +87,7 @@ services:
                 cpus: '0.25'
                 memory: 512M
     depends_on:
-      - eureka
+      - eureka-server
     environment:
       eureka.client.serviceUrl.defaultZone: http://eureka-server:8761/eureka
   eureka-server:
